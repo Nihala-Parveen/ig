@@ -1,0 +1,118 @@
+/*navbar section*/
+.navbar{
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    width: 250px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    text-decoration: none;
+}
+.menu:hover{
+    text-decoration: underline;
+}
+/*story section*/
+.story{
+    display: flex;
+    height: 101px;
+    width: 630px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+.stories{
+    width: 17%;
+}
+.stories img{
+    border: 2px solid #c62d8f;
+}
+.stories p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*post section*/
+.post{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.post-title{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.post-title img{
+    float: left;
+    margin-right: 10px;
+}
+.post-content img{
+    margin-left: 25px;
+    margin-top: 15px;
+}
+/*right section*/
+.suggestion{
+    margin-left: 1100px;
+}
+.follow{
+    float: left;
+}
+
+/* For screens smaller than 768px (e.g., small devices like mobile phones) */
+@media (max-width: 767px) {
+    .navbar {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto; 
+        display: flex;
+        flex-direction: row;
+    }
+    .list img{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .topnav{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+    }
+    .insta{
+        float: left;
+    }
+    .not-mes{
+        display: flex;
+        padding-left: 500px;
+    }
+    .not{
+        display: none;
+    }
+}
+
+/* For screens larger than or equal to 768px (e.g., large devices) */
+@media (min-width: 768px) {
+    .navbar {
+        width: 250px; 
+    }
+    .main{
+        width: 900px;
+        margin-left: 260px; 
+        float: left;
+    }
+    .topnav{
+        display: none;
+    }
+}
+
+@media (max-width: 1420px){
+    .suggestion{
+        display: none;
+    }
+}
